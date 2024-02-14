@@ -61,16 +61,16 @@
       opacity: 0; /* Initially hidden */
     }
     .section:nth-child(1) {
-      animation-delay: 0.5s; /* Delay the animation of the first section by 0.5s */
+      animation-delay: 2s; /* Delay the animation of the first section by 0.5s */
     }
     .section:nth-child(2) {
-      animation-delay: 1s; /* Delay the animation of the second section by 1s */
+      animation-delay: 3s; /* Delay the animation of the second section by 1s */
     }
     .section:nth-child(3) {
-      animation-delay: 1.5s; /* Delay the animation of the third section by 1.5s */
+      animation-delay: 4s; /* Delay the animation of the third section by 1.5s */
     }
     .section:nth-child(4) {
-      animation-delay: 2s; /* Delay the animation of the fourth section by 2s */
+      animation-delay: 5s; /* Delay the animation of the fourth section by 2s */
     }
     .hangman-game {
       margin-top: 50px;
@@ -134,7 +134,7 @@
     <p>With all my love,<br>Bubu</p>
   </div>
   <script>
-    const words = ["lovely", "bubu", "chocolate", "hirai", "pink lamborghini"]; // Add more words as needed
+    const words = ["bubu", "hirai", "pinklamborghini"]; // Add more words as needed
     let chosenWord = words[Math.floor(Math.random() * words.length)];
     let remainingAttempts = 6;
     let guessedLetters = new Set();
