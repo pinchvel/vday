@@ -54,7 +54,20 @@
     }
     .section {
       margin-top: 50px;
-      animation: fadeIn 1s ease;
+      animation: fadeIn 1s ease forwards; /* Added forwards to keep the final state of opacity */
+      opacity: 0; /* Initially hidden */
+    }
+    .section:nth-child(1) {
+      animation-delay: 0.5s; /* Delay the animation of the first section by 0.5s */
+    }
+    .section:nth-child(2) {
+      animation-delay: 1s; /* Delay the animation of the second section by 1s */
+    }
+    .section:nth-child(3) {
+      animation-delay: 1.5s; /* Delay the animation of the third section by 1.5s */
+    }
+    .section:nth-child(4) {
+      animation-delay: 2s; /* Delay the animation of the fourth section by 2s */
     }
     /* Heart animation */
     .hearts-container {
