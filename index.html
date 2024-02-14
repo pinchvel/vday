@@ -9,19 +9,29 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
     }
     header {
-      background-color: pink;
+      background-color: #ffcccc;
       padding: 20px;
       text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
     }
     h1 {
-      color: white;
+      color: #fff;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .container {
       max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
+      margin: 100px auto 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
     .gallery {
       display: grid;
@@ -31,6 +41,12 @@
     .gallery img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     .twice-section {
       margin-top: 50px;
@@ -49,6 +65,23 @@
       <img src="image2.jpg" alt="Image 2">
       <img src="image3.jpg" alt="Image 3">
       <!-- Add more images as needed -->
+    </div>
+    <audio controls autoplay loop>
+      <source src="twice_song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="twice-section">
+      <h2>About Twice</h2>
+      <p>Twice is a South Korean girl group formed by JYP Entertainment. They debuted in 2015 and have gained immense popularity with their catchy songs and charming personalities.</p>
+      <p>Here are a few of their popular songs:</p>
+      <ul>
+        <li>Like OOH-AHH</li>
+        <li>Cheer Up</li>
+        <li>TT</li>
+        <li>Feel Special</li>
+        <!-- Add more songs if you want -->
+      </ul>
+      <p>Feel free to explore more about them!</p>
     </div>
     <p>With all my love,<br>Bubu</p>
   </div>
