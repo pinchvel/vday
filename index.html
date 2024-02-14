@@ -9,8 +9,18 @@
       font-family: 'Courier New', monospace, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(45deg, #ff5fa2, #fccfa6);
       color: #333;
+      overflow: hidden; /* Hide the scrollbars */
+    }
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1; /* Place the video behind other elements */
     }
     header {
       padding: 20px;
@@ -38,7 +48,7 @@
       max-width: 800px;
       margin: 150px auto 20px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       animation: fadeIn 1s ease;
@@ -94,6 +104,9 @@
   </style>
 </head>
 <body>
+  <video id="video-background" autoplay muted loop>
+    <source src="https://www.youtube.com/watch?v=7ZhKZqkgVuw?autoplay=1&mute=1" type="video/mp4">
+  </video>
   <header>
     <h1>Happy Valentine's Day!</h1>
   </header>
