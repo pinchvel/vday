@@ -51,6 +51,10 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+    .new-line {
+      display: block; /* Display the image as a block element to start a new line */
+      grid-column: span 2; /* Span two grid columns to occupy full width */
+    }
     .section {
       margin-top: 50px;
       animation: fadeIn 1s ease forwards; /* Added forwards to keep the final state of opacity */
@@ -86,13 +90,13 @@
     <p>Dear Dudu,</p>
     <p>Happy Valentines! I love you so so much and I hope you can see so through this janky webpage lol. Click the play button below the pics of us c: (and ur 3 fav wives HAHAH)</p>
     <div class="gallery">
-      <img src="IMG_0276.jpg" alt="Image 4">
+      <img src="IMG_0276.jpg" alt="Image 4" class="new-line">
       <img src="IMG_6434.jpg" alt="Image 5">
-      <img src="IMG_6473.jpg" alt="Image 6">
+      <img src="IMG_6473.jpg" alt="Image 6" class="new-line">
       <img src="IMG_6498.jpg" alt="Image 7">
       <img src="IMG_6508.jpg" alt="Image 8">
       <img src="IMG_2842.jpg" alt="Image 9">
-      <img src="IMG_6535.jpg" alt="Image 10">
+      <img src="IMG_6535.jpg" alt="Image 10" class="new-line">
       <img src="image1.jpg" alt="Image 1">
       <img src="image2.jpg" alt="Image 2">
       <img src="image3.jpg" alt="Image 3">
