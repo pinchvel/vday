@@ -11,7 +11,6 @@
       padding: 0;
       background: linear-gradient(45deg, #ff5fa2, #fccfa6);
       color: #333;
-      overflow: hidden; /* Ensure the hearts are visible outside the container */
     }
     header {
       padding: 20px;
@@ -35,7 +34,6 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       animation: fadeIn 1s ease;
-      z-index: 1; /* Ensure the container stays above the hearts */
     }
     .gallery {
       display: grid;
@@ -69,43 +67,6 @@
     }
     .section:nth-child(4) {
       animation-delay: 2s; /* Delay the animation of the fourth section by 2s */
-    }
-    /* Heart animation */
-    .hearts-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; /* Allow clicks to go through the hearts */
-    }
-    .heart {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background-color: #ff4d94;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      animation: heartBeat 1s infinite alternate, moveHearts 15s linear infinite;
-      opacity: 0.6;
-    }
-    @keyframes heartBeat {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.2);
-      }
-    }
-    @keyframes moveHearts {
-      0% {
-        transform: translateY(0) translateX(0);
-      }
-      50% {
-        transform: translateY(-100vh) translateX(100vw);
-      }
-      100% {
-        transform: translateY(0) translateX(0);
-      }
     }
     @keyframes fadeIn {
       0% {
@@ -144,13 +105,6 @@
       <!-- Add more reasons if you want -->
     </div>
     <p>With all my love,<br>Bubu</p>
-  </div>
-  <!-- Hearts container -->
-  <div class="hearts-container">
-    <div class="heart"></div>
-    <div class="heart"></div>
-    <div class="heart"></div>
-    <!-- Add more hearts if you want -->
   </div>
 </body>
 </html>
