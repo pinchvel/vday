@@ -111,7 +111,7 @@
       <img src="image3.jpg" alt="Image 3">
     </div>
     <div class="hangman-game">
-      <h2>Hangman Game</h2>
+      <h2>Let's Play Hangman :D</h2>
       <div id="word-display"></div>
       <div id="attempts">Attempts left: <span id="remaining-attempts">6</span></div>
       <input type="text" id="guessInput" placeholder="Enter a letter">
@@ -134,7 +134,7 @@
     <p>With all my love,<br>Bubu</p>
   </div>
   <script>
-    const words = ["lovely", "bubu", "chocolate", "hirai"]; // Add more words as needed
+    const words = ["lovely", "bubu", "chocolate", "hirai", "pink lamborghini"]; // Add more words as needed
     let chosenWord = words[Math.floor(Math.random() * words.length)];
     let remainingAttempts = 6;
     let guessedLetters = new Set();
@@ -161,9 +161,9 @@
 
     function checkGameStatus() {
       if (remainingAttempts === 0) {
-        document.getElementById('message').textContent = 'Game Over! The word was: ' + chosenWord;
+        document.getElementById('message').textContent = 'Womp womp... Game Over! The word was: ' + chosenWord;
       } else if (!document.getElementById('word-display').textContent.includes('_')) {
-        document.getElementById('message').textContent = 'Congratulations! You guessed the word!';
+        document.getElementById('message').textContent = 'YAYYAYA BUBU UR SO SMART MY BUBBY!';
       }
     }
 
