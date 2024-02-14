@@ -24,6 +24,7 @@
       color: #fff;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
       font-size: 36px;
+      animation: fadeIn 1s ease;
     }
     .container {
       max-width: 800px;
@@ -32,11 +33,13 @@
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease;
     }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 20px;
+      animation: fadeIn 1s ease;
     }
     .gallery img {
       width: 100%;
@@ -50,6 +53,44 @@
     }
     .section {
       margin-top: 50px;
+      animation: fadeIn 1s ease;
+    }
+    /* Heart animation */
+    .heart {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff4d94;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      animation: heartBeat 1s infinite alternate, moveHearts 15s linear infinite;
+      opacity: 0.6;
+    }
+    @keyframes heartBeat {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+    @keyframes moveHearts {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100vh);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -81,5 +122,10 @@
     </div>
     <p>With all my love,<br>Bubu</p>
   </div>
+  <!-- Hearts -->
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <!-- Add more hearts if you want -->
 </body>
 </html>
